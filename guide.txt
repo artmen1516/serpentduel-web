@@ -1,0 +1,16 @@
+Serpent Duel Demo
+
+The demo can run on various platforms including the desktop, Java Virtual Machine, and Web browser. Running the demo on the desktop requires Python and Pygame installation, run with 'python serpentduel.py'. To run in Java Virtual Machine, the system requires JVM installed, Jython installed or use of Jython standalone, and the PyJ2D folder unpacked in the demo folder or on the path, run with 'jython serpentduel.py' or 'java -jar jython.jar serpentduel.py'. To run in the Web browser, ensure the Pyjsdl folder is unpacked in demo folder or on the path, and use an installed Pyjs compiler to compile to JavaScript. Use 'pyjsbuild --help' to list compiler options, to generate optimized code use command: 'pyjsbuild -O serpentduel.py --dynamic-link -o output' (optionally with -d and --enable-print-statements options for debug and browser console output). Prior to Pyjs compiler, remove or rename the PyJ2D folder if present as it will disrupt the compilation. The Pyjs compiled code can be launched in the Web browser from the main html 'serpentduel.html' from a Web server or local server using either 'python2 -m SimpleHTTPServer 8000' or 'python3 -m http.server' and browse to localhost:8000. Tested in Linux with Python 2.7/Pygame 1.9.6 and Python 3.8.5/Pygame 2.0.1, in JVM with Jython 2.5.2 and PyJ2D 0.30, and in the Chrome/Firefox (Linux/Windows) and IE (Windows) browsers with Pyjs Github package and Pyjsdl 0.24.
+
+Requirements:
+
+Desktop:
+Python (https://www.python.org) and Pygame (https://www.pygame.org)
+
+Java Virtual Machine:
+JVM (https://www.java.com)
+Jython (http://jython.org) and PyJ2D (https://gatc.ca/projects/pyj2d)
+
+Web browser:
+Pyjs (https://github.com/pyjs/pyjs) and Pyjsdl (https://gatc.ca/projects/pyjsdl)
+
